@@ -1,14 +1,9 @@
 <template>
   <div>
-    <div
-      class="container min-h-screen min-w-fit text-slate-300 flex justify-center items-center"
-      id="main"
-    >
-      <div
-        class="about-container w-3/4 flex flex-row flex-wrap justify-center relative bottom-20"
-      >
+    <div class="container min-h-screen min-w-fit text-slate-300 flex justify-center items-center" id="main">
+      <div class="about-container w-3/4 flex flex-row flex-wrap justify-center relative bottom-20">
         <div class="img-container mr-14 rounded-3xl w-78 overflow-hidden self-center">
-          <img src="../assets/portfolio optimized 300px.jpeg" alt="profile picture" />
+          <img src="../assets/portfoliopic.jpeg" alt="profile picture" />
         </div>
         <article class="flex flex-col w-1/2">
           <p>
