@@ -5,7 +5,7 @@ import Socials from "./components/Socials.vue";
 import { RouterView } from "vue-router";
 
 export default {
-  components: { Home, Navigation, Socials },
+  components: { Home, Navigation, Socials, RouterView },
   setup() {
     return {};
   },
