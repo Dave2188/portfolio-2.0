@@ -77,7 +77,7 @@ export default {
     const downloadResume = () => {
       let result = confirm("Would you like to download Resume?");
       if (result) {
-        window.location.href = "src/assets/David 2:5:23 resume docx.docx";
+        window.location.href = "/David 2:5:23 resume docx.docx";
       }
     };
 
