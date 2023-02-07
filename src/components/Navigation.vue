@@ -29,7 +29,7 @@
     <Hamburger @expand="handleMenu" class="ham-menu md:hidden" />
   </div>
   <div :v-if="expanded" id="menu"
-    class="text-2xl w-3/4 bg-slate-800 float-right z-10 flex justify-end text-slate-300 rounded-bl-2xl"
+    class="text-2xl w-3/4 bg-slate-800 absolute right-0 z-10 flex justify-end text-slate-300 rounded-bl-2xl"
     @click="handleMenu">
     <ul class="menu-ul flex flex-col items-center w-full">
       <li class="menu-li hover:animate-bounce">
@@ -105,6 +105,12 @@ export default {
   }
 }
 
+/* @media (max-width: 480px) {
+  .expanded {
+    
+  }
+} */
+
 .menu-li {
   border-radius: 1rem;
   font-family: "shadows into light";
@@ -133,6 +139,5 @@ li:hover {
   text-align: center;
   transition: all 0.8s;
   width: 80%;
-  z-index: 0;
 }
 </style>

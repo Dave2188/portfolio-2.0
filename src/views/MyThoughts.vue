@@ -49,4 +49,19 @@ p {
   font-size: medium;
   margin: 2rem 0;
 }
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: small;
+  }
+}
 </style>

@@ -127,6 +127,7 @@ h2 {
 }
 
 @media (max-width: 800px) {
+
   .biz-card,
   .flip-container {
     transform: scale(0.6);
@@ -139,11 +140,18 @@ h2 {
 
 @media (max-width: 480px) {
   .flip-container {
-    margin-bottom: 90%;
+    margin-bottom: 60%;
+  }
+
+  .biz-card,
+  .flipper,
+  .flip-container {
+    transform: scale(0.5);
   }
 }
 
 @media (min-width: 2000px) {
+
   .bis-card,
   .flip-container {
     transform: scale(1.2);

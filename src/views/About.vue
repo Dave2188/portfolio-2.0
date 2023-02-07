@@ -95,20 +95,23 @@ li {
   }
 
   .img-container {
-    width: 12rem;
-  }
-}
-
-@media (max-width: 760px) {
-  .about-container {
-    flex-direction: column;
-    align-content: center;
-    width: 90%;
-  }
-
-  .img-container {
     width: 8rem;
     margin-bottom: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    top: 3rem;
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: 99vh;
   }
 }
 
