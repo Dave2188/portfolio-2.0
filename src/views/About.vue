@@ -121,7 +121,7 @@ li {
 
 @media (max-width: 480px) {
  .about-container {
-  margin-top: 4rem;
+  margin-top: 1rem;
   }
 }
 
