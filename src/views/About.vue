@@ -120,6 +120,10 @@ li {
 }
 
 @media (max-width: 480px) {
+  article {
+   margin-bottom: 4rem;
+          }
+
  .about-container {
   margin-top: 1rem;
   top: 0px;
@@ -136,7 +140,7 @@ li {
     }
 }
 
-media (min-width: 2000px) {
+@media (min-width: 2000px) {
   #main {
     transform: scale(1.2);
   }
