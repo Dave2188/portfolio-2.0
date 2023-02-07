@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute bottom-0 left-3 flex flex-col gap-3">
+    <div class="socials absolute bottom-0 left-3 flex flex-col gap-3">
         <a href="https://linkedin.com/in/davidfox967" target="_blank">
             <v-icon name="ri-linkedin-box-line" scale="2" color="rgb(203 213 225)" hover="true" animation="wrench"
                 speed="slow" />
@@ -49,5 +49,13 @@ export default {
 
 .email-container {
     right: -4.8rem;
+}
+
+@media (max-width: 480px) {
+
+    .socials,
+    .email-container {
+        visibility: hidden;
+    }
 }
 </style>

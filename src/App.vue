@@ -19,7 +19,7 @@ export default {
       <RouterView />
     </main>
     <aside class="float-left">
-      <Socials />
+      <Socials id="socials" />
     </aside>
   </div>
 </template>
@@ -35,7 +35,8 @@ export default {
   font-family: "shadows into light";
 }
 
-h1 {
+h1,
+h2 {
   font-size: 6rem;
   font-family: "aboreto";
   font-weight: 500;
@@ -60,6 +61,12 @@ p {
   h1 {
     font-size: 3rem;
     margin: 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #socials {
+    display: none;
   }
 }
 </style>

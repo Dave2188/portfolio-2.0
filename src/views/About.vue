@@ -103,7 +103,7 @@ li {
     flex-direction: column;
     align-items: center;
     margin-top: 8rem;
-    top: 3rem;
+    top: .5rem;
     width: 100%;
   }
 

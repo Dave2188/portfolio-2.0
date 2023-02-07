@@ -1,6 +1,6 @@
 <template>
   <div class="contact-container">
-    <div class="flip-container animate-bounce tap:animate-none">
+    <!-- <div class="flip-container animate-bounce tap:animate-none">
       <div class="bis-card flipper text-slate-300">
         <div class="front">
           <h1 class="logo">Df</h1>
@@ -31,6 +31,39 @@
           </a>
         </div>
       </div>
+    </div> -->
+    <div class="alt-contact">
+      <div class="alt-card text-slate-300 text-center">
+        <h2>David Fox</h2>
+        <h2 class="accent animate-pulse">Web Developer</h2>
+        <a href="mailto:davidfox967@yahoo.com" target="_blank">
+          <p><span class="accent">Email: </span>Davidfox967@yahoo.com</p>
+        </a>
+        <a href="https://github.com/Dave2188" target="_blank">
+          <p>
+            <span class="accent">GitHub:</span>
+            https://github.com/Dave2188
+          </p>
+        </a>
+        <a href="https://linkedin.com/in/davidfox967" target="_blank">
+          <p>
+            <span class="accent">Linkedin:</span>
+            www.linkedin.com/in/davidfox967
+          </p>
+        </a>
+        <a href="https://twitter.com/dave2188" target="_blank">
+          <p>
+            <span class="accent">Twitter:</span>
+            https://twitter.com/dave2188
+          </p>
+        </a>
+        <a href="https://twitter.com/dave2188" target="_blank">
+          <p>
+            <span class="accent">Calendly:</span>
+            https://calendly.com/davidfox967
+          </p>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -40,11 +73,6 @@ export default {};
 </script>
 
 <style lang="css" scoped>
-/* a:hover {
-   ;
-
-} */
-
 p:hover {
   transform: scale(1.2);
   text-shadow: 0px 0px 5px rgb(43, 196, 230);
@@ -53,15 +81,17 @@ p:hover {
 
 p {
   font-family: "shadows into light";
-  font-size: 1.5rem;
-  margin: 0.5rem 1.5rem;
+  font-size: 2rem;
+  margin: 1.5rem auto;
+  padding: 0;
   letter-spacing: 0.1rem;
   text-align: center;
+  max-width: content;
 }
 
 h2 {
-  font-size: 2rem;
-  margin: 1rem 4rem;
+  font-size: 3rem;
+  margin: 1rem 5rem;
   display: inline-block;
 }
 
@@ -72,7 +102,29 @@ h2 {
   height: 100vh;
 }
 
-.logo {
+.alt-contact {
+  margin-bottom: 10%;
+  width: 80vw;
+}
+
+@media (max-width: 480px) {
+  .alt-contact {
+    margin-bottom: 40%;
+    width: 100vw;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 0rem 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin: 2rem 0;
+  }
+}
+
+/* .logo {
   position: relative;
   font-size: 4rem;
   font-family: "shadows into light";
@@ -83,8 +135,8 @@ h2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
+} */
+/* 
 .bis-card {
   background-color: rgb(19, 18, 18);
   border-radius: 20px;
@@ -96,9 +148,9 @@ h2 {
   top: 25%;
   font-family: "shadows into light";
   font-size: 1.5rem;
-}
+} */
 
-.flip-container {
+/* .flip-container {
   perspective: 600px;
   height: fit-content;
   margin-bottom: 10%;
@@ -116,10 +168,11 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
+
 }
 
 .front {
-  z-index: 2;
+  z-index: 1;
 }
 
 .back {
@@ -140,13 +193,7 @@ h2 {
 
 @media (max-width: 480px) {
   .flip-container {
-    margin-bottom: 60%;
-  }
-
-  .biz-card,
-  .flipper,
-  .flip-container {
-    animation: none;
+    margin-bottom: 50vh;
   }
 
   .flip-container .flipper {
@@ -154,7 +201,15 @@ h2 {
   }
 
 
+  .flipper,
+  .flip-container {
+    animation: none;
+    position: static;
+  }
 
+ */
+
+/* 
 }
 
 @media (min-width: 2000px) {
@@ -163,5 +218,5 @@ h2 {
   .flip-container {
     transform: scale(1.2);
   }
-}
+} */
 </style>
