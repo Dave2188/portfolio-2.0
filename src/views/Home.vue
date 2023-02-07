@@ -2,7 +2,7 @@
 import Hero from "../components/Hero.vue";
 
 export default {
-  components: { Navigation, Hero },
+  components: { Hero },
 };
 </script>
 
