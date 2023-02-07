@@ -123,6 +123,10 @@ li {
  .about-container {
   margin-top: 1rem;
   }
+
+  Li {
+    font-size: 1rem;
+    margin: 0.4rem;
 }
 
 @media (min-width: 2000px) {
