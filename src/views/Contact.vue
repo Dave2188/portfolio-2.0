@@ -1,6 +1,6 @@
 <template>
   <div class="contact-container">
-    <div class="flip-container animate-bounce hover:animate-none">
+    <div class="flip-container animate-bounce tap:animate-none">
       <div class="bis-card flipper text-slate-300">
         <div class="front">
           <h1 class="logo">Df</h1>
@@ -146,8 +146,15 @@ h2 {
   .biz-card,
   .flipper,
   .flip-container {
-    transform: scale(0.5);
+    animation: none;
   }
+
+  .flip-container .flipper {
+    transform: rotateY(180deg);
+  }
+
+
+
 }
 
 @media (min-width: 2000px) {
