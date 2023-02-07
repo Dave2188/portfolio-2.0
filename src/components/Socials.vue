@@ -48,6 +48,6 @@ export default {
 }
 
 .email-container {
-    right: -4rem;
+    right: -4.8rem;
 }
 </style>
