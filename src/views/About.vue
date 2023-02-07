@@ -122,14 +122,20 @@ li {
 @media (max-width: 480px) {
  .about-container {
   margin-top: 1rem;
-  }
+     }
 
   Li {
     font-size: 1rem;
-    margin: 0.4rem;
+    margin: 0.2rem;
+      }
+
+  
+    p {
+    margin: 0.5rem 0;
+    }
 }
 
-@media (min-width: 2000px) {
+media (min-width: 2000px) {
   #main {
     transform: scale(1.2);
   }
