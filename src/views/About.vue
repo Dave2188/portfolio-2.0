@@ -119,6 +119,12 @@ li {
   box-shadow: 5px 5px rgb(43, 196, 230);
 }
 
+@media (max-width: 480px) {
+ .about-container {
+  margin-top: 4rem;
+  }
+}
+
 @media (min-width: 2000px) {
   #main {
     transform: scale(1.2);
