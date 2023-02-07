@@ -1,6 +1,6 @@
 <template>
     <div class="project-card w-full md:w-8/12 text-slate-300 flex flex-col justify-center overflow-hidden">
-        <h2 class="text-center mb-3">{{ card.title }}</h2>
+        <h2 class="text-center text-2xl mb-3">{{ card.title }}</h2>
         <div class="img-container rounded-lg self-center mb-5">
             <img class="rounded-2xl" :src="card.img" alt="" />
         </div>

@@ -63,10 +63,4 @@ p {
     margin: 2rem 0;
   }
 }
-
-@media (max-width: 480px) {
-  #socials {
-    display: none;
-  }
-}
 </style>
