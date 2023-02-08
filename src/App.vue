@@ -25,9 +25,16 @@ export default {
 </template>
 
 <style>
+#app {
+  background-color: rgb(26, 38, 57);
+
+
+}
+
 .full-Paint {
   background-color: rgb(26, 38, 57);
   height: 100vh;
+
 }
 
 .accent {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container min-h-screen min-w-fit text-slate-300 flex justify-center items-center" id="main">
+    <div class="container min-h-screen min-w-fit  text-slate-300 flex justify-center items-center" id="main">
       <div class="about-container w-3/4 flex flex-row flex-wrap justify-center relative bottom-20">
         <div class="img-container mr-14 rounded-3xl w-78 overflow-hidden self-center">
           <img src="../assets/portfoliopic.jpeg" alt="profile picture" />
@@ -103,15 +103,17 @@ li {
     flex-direction: column;
     align-items: center;
     margin-top: 8rem;
-    top: .5rem;
+    top: -6rem;
     width: 100%;
+    height: 100
   }
 
   .container {
     flex-direction: column;
     flex-wrap: wrap;
     overflow: scroll;
-    height: 99vh;
+
+
   }
 }
 
@@ -120,24 +122,11 @@ li {
 }
 
 @media (max-width: 480px) {
-  article {
-   margin-bottom: 4rem;
-          }
 
- .about-container {
-  margin-top: 1rem;
-  top: 0px;
-     }
-
-  Li {
-    font-size: 1rem;
-    margin: 0.2rem;
-      }
-
-  
-    p {
-    margin: 0.5rem 0;
-    }
+  .container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 @media (min-width: 2000px) {
