@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container min-h-screen min-w-fit  text-slate-300 flex justify-center items-center" id="main">
+    <div class="container min-h-screen min-w-fit text-slate-300 flex justify-center items-center" id="main">
       <div class="about-container w-3/4 flex flex-row flex-wrap justify-center relative bottom-20">
         <div class="img-container mr-14 rounded-3xl w-78 overflow-hidden self-center">
           <img src="../assets/portfoliopic.jpeg" alt="profile picture" />
@@ -56,27 +56,18 @@ li {
   font-size: 2rem;
 }
 
-@media (max-width: 945px) {
+.img-container {
+  box-shadow: 5px 5px rgb(43, 196, 230);
+}
+
+@media (max-width: 1200px) {
   p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   li {
     font-size: 1.5rem;
-  }
-
-  .img-container {
-    width: 15rem;
-  }
-}
-
-@media (max-width: 840px) {
-  p {
-    font-size: 0.8rem;
-  }
-
-  li {
-    font-size: 1.2rem;
+    margin: 0.7rem;
   }
 
   .img-container {
@@ -84,49 +75,42 @@ li {
   }
 }
 
-@media (max-width: 760px) {
-  p {
-    font-size: 0.8rem;
-  }
-
+@media (max-width: 840px) {
   li {
-    font-size: 1.2rem;
     margin: 0.5rem;
   }
 
-  .img-container {
-    width: 8rem;
-    margin-bottom: 1rem;
-  }
-
   .about-container {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 8rem;
-    top: -6rem;
-    width: 100%;
-    height: 100
+    width: 95vw;
   }
 
   .container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow: scroll;
+    width: 100vw;
+    overflow: hidden;
+  }
 
-
+  .img-container {
+    width: 12rem;
   }
 }
 
-.img-container {
-  box-shadow: 5px 5px rgb(43, 196, 230);
-}
-
-@media (max-width: 480px) {
-
-  .container {
-    overflow-y: scroll;
-    overflow-x: hidden;
+@media (max-width: 650px) {
+  p {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
   }
+
+  article {
+    width: 100vw;
+    margin-bottom: 10%;
+  }
+
+  .img-container {
+    margin: 1rem auto;
+    width: 8rem;
+  }
+
+
 }
 
 @media (min-width: 2000px) {

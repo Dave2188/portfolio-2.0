@@ -11,8 +11,28 @@
 </template>
 
 <script>
+import { effect } from 'vue';
 export default {
+  props: ['expanded'],
   setup(props, context) {
+    let { expanded } = props;
+
+    // const close = () => {
+    //   const btn = document.getElementById("ham-btn").classList;
+    //   if (btn.contains("active")) {
+    //     btn.remove("active");
+    //   }
+    // }
+
+    // effect(() => {
+    //   const btn = document.getElementById("ham-btn").classList;
+    //   if (btn.contains("active")) {
+    //     btn.remove("active");
+    //   }
+    // }, expanded)
+
+
+
     const hamClick = (e) => {
       const btn = document.getElementById("ham-btn").classList;
       if (!btn.contains("active")) {
@@ -22,7 +42,7 @@ export default {
       }
       context.emit("expand");
     };
-    return { hamClick };
+    return { hamClick, close };
   },
 };
 </script>
