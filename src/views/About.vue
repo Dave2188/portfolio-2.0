@@ -122,6 +122,7 @@ li {
 }
 
 @media (max-width: 480px) {
+
   .container {
     overflow-y: scroll;
     overflow-x: hidden;
