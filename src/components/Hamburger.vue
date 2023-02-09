@@ -11,28 +11,9 @@
 </template>
 
 <script>
-import { effect } from 'vue';
+import { effect } from "vue";
 export default {
-  props: ['expanded'],
-  setup(props, context) {
-    let { expanded } = props;
-
-    // const close = () => {
-    //   const btn = document.getElementById("ham-btn").classList;
-    //   if (btn.contains("active")) {
-    //     btn.remove("active");
-    //   }
-    // }
-
-    // effect(() => {
-    //   const btn = document.getElementById("ham-btn").classList;
-    //   if (btn.contains("active")) {
-    //     btn.remove("active");
-    //   }
-    // }, expanded)
-
-
-
+  setup(prop, context) {
     const hamClick = (e) => {
       const btn = document.getElementById("ham-btn").classList;
       if (!btn.contains("active")) {

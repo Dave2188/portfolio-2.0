@@ -1,7 +1,9 @@
 <template>
   <div class="main min-h-screen flex flex-col w-3/4 mx-auto items-center">
-    <h1 class="header w-full  text-center shadow-2xl shadow-black saturate-200 rounded-2xl">My thoughts
-      along the way
+    <h1
+      class="header w-full text-center shadow-2xl shadow-black saturate-200 rounded-2xl"
+    >
+      My thoughts along the way
     </h1>
     <div class="thought-container w-full text-center">
       <ul>
@@ -62,8 +64,7 @@ p {
   margin: 1.5rem 0 4rem 0;
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 500px) {
   .thought-container,
   .header {
     width: 95vw;
@@ -72,7 +73,7 @@ p {
   .header {
     font-size: 1.8rem;
     margin: 2rem 0;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
   h3 {

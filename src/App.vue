@@ -27,14 +27,14 @@ export default {
 <style>
 #app {
   background-color: rgb(26, 38, 57);
-
-
+  height: 100vh;
+  width: 100vw;
 }
 
 .full-Paint {
   background-color: rgb(26, 38, 57);
   height: 100vh;
-
+  width: 100vw;
 }
 
 .accent {

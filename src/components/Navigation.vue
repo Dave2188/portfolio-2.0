@@ -28,7 +28,7 @@
         </li>
       </ul>
     </div>
-    <Hamburger @expand="handleMenu" :expanded="expanded" class="ham-menu md:hidden" />
+    <Hamburger @expand="handleMenu" class="ham-menu md:hidden" />
   </div>
   <div
     :v-if="expanded"
@@ -68,6 +68,8 @@ export default {
       if (!expanded.value) {
         expanded.value = true;
       } else {
+        const btn = document.getElementById("ham-btn").classList;
+        btn.remove("active");
         expanded.value = false;
       }
     };
@@ -93,6 +95,10 @@ export default {
 </script>
 
 <style scoped>
+.nav-bar {
+  width: 100vw;
+}
+
 .hrz-menu {
   font-family: "shadows into light";
   letter-spacing: 2px;
