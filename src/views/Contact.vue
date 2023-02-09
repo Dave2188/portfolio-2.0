@@ -107,7 +107,7 @@ h2 {
   width: 80vw;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .alt-contact {
     margin-bottom: 40%;
     width: 100vw;
