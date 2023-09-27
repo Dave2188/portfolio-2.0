@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="nav-bar h-16 bg-slate-800 flex flex-grow justify-between items-center md:h-20 shadow-2xl"
-  >
+  <div class="nav-bar h-16 bg-slate-800 flex flex-grow justify-between items-center md:h-20 shadow-2xl">
     <RouterLink to="/">
       <Logo />
     </RouterLink>
@@ -30,12 +28,9 @@
     </div>
     <Hamburger @expand="handleMenu" class="ham-menu md:hidden" />
   </div>
-  <div
-    :v-if="expanded"
-    id="menu"
+  <div :v-if="expanded" id="menu"
     class="text-2xl w-3/4 bg-slate-800 absolute right-0 z-10 flex justify-end text-slate-300 rounded-bl-2xl"
-    @click="handleMenu"
-  >
+    @click="handleMenu">
     <ul class="menu-ul flex flex-col items-center w-full">
       <li class="menu-li hover:animate-bounce">
         <router-link to="/about">About</router-link>
@@ -64,7 +59,7 @@ export default {
   setup() {
     let expanded = ref(false);
 
-    const handleMenu = (e) => {
+    const handleMenu = e => {
       if (!expanded.value) {
         expanded.value = true;
       } else {
@@ -84,7 +79,7 @@ export default {
     const downloadResume = () => {
       let result = confirm("Would you like to download Resume?");
       if (result) {
-        window.location.href = "/David 2:5:23 resume docx.docx";
+        window.location.href = "/David 6:20:23 resume docx.docx";
       }
     };
 
