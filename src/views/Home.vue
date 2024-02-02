@@ -18,9 +18,9 @@ export default {
   width: 100vw;
 }
 
-@media (min-width: 2000px) {
+/* @media (min-width: 2000px) {
   #main {
     transform: scale(1.2);
   }
-}
+} */
 </style>

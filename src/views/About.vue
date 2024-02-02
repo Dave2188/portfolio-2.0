@@ -109,13 +109,11 @@ li {
     margin: 1rem auto;
     width: 8rem;
   }
-
-
 }
 
 @media (min-width: 2000px) {
-  #main {
+  /* #main {
     transform: scale(1.2);
-  }
+  } */
 }
 </style>

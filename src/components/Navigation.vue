@@ -1,29 +1,27 @@
 <template>
-  <div class="nav-bar h-16 bg-slate-800 flex flex-grow justify-between items-center md:h-20 shadow-2xl">
+  <div class="nav-bar bg-slate-800 flex flex-grow justify-between items-center h-20 shadow-2xl">
     <RouterLink to="/">
       <Logo />
     </RouterLink>
     <div class="hrz-menu text-2xl text-slate-300">
       <ul class="flex flex-row flex-wrap items-center">
-        <li class="hover:animate-bounce mx-7 p-2 rounded-lg">
+        <li class="mx-7 p-2 rounded-lg">
           <router-link to="/about">About</router-link>
         </li>
 
-        <li class="hover:animate-bounce mx-7 p-2 rounded-lg">
+        <li class="mx-7 p-2 rounded-lg">
           <router-link to="/projects">Projects</router-link>
         </li>
 
-        <li class="hover:animate-bounce mx-7 p-2 rounded-lg">
+        <li class="mx-7 p-2 rounded-lg">
           <router-link to="/contact">Contact</router-link>
         </li>
 
-        <li class="hover:animate-bounce mx-7 p-2 rounded-lg">
+        <li class="mx-7 p-2 rounded-lg">
           <router-link to="/thoughts">Thoughts</router-link>
         </li>
 
-        <li @click="downloadResume" class="hover:animate-bounce mx-7 p-2 rounded-lg">
-          Resume
-        </li>
+        <li @click="downloadResume" class="mx-7 p-2 rounded-lg">Resume</li>
       </ul>
     </div>
     <Hamburger @expand="handleMenu" class="ham-menu md:hidden" />
@@ -32,19 +30,19 @@
     class="text-2xl w-3/4 bg-slate-800 absolute right-0 z-10 flex justify-end text-slate-300 rounded-bl-2xl"
     @click="handleMenu">
     <ul class="menu-ul flex flex-col items-center w-full">
-      <li class="menu-li hover:animate-bounce">
+      <li class="menu-li">
         <router-link to="/about">About</router-link>
       </li>
-      <li class="menu-li hover:animate-bounce">
+      <li class="menu-li">
         <router-link to="/projects">Projects</router-link>
       </li>
-      <li class="menu-li hover:animate-bounce">
+      <li class="menu-li">
         <router-link to="/contact">Contact</router-link>
       </li>
-      <li class="menu-li hover:animate-bounce">
+      <li class="menu-li">
         <router-link to="/thoughts">Thoughts</router-link>
       </li>
-      <li class="menu-li hover:animate-bounce" @click="downloadResume">Resume</li>
+      <li class="menu-li" @click="downloadResume">Resume</li>
     </ul>
   </div>
 </template>
@@ -79,7 +77,7 @@ export default {
     const downloadResume = () => {
       let result = confirm("Would you like to download Resume?");
       if (result) {
-        window.location.href = "/David 6:20:23 resume docx.docx";
+        window.location.href = "/David Resume 2:2:24 .docx";
       }
     };
 

@@ -37,7 +37,7 @@
         <h2>David Fox</h2>
         <h2 class="accent animate-pulse">Web Developer</h2>
         <a href="mailto:davidfox967@yahoo.com" target="_blank">
-          <p><span class="accent">Email: </span>Davidfox967@yahoo.com</p>
+          <p><span class="accent">Email: </span>Davidfox9000@gmail.com</p>
         </a>
         <a href="https://github.com/Dave2188" target="_blank">
           <p>
@@ -74,7 +74,7 @@ export default {};
 
 <style lang="css" scoped>
 p:hover {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
   text-shadow: 0px 0px 5px rgb(43, 196, 230);
   transition: 0.5s "text-shadow", scale(1);
 }

@@ -2,12 +2,7 @@
   <div id="main" class="flex justify-center items-center flex-col min-h-screen w-screen">
     <div class="title-nav">
       <ul class="text-center flex text-stone-300">
-        <li
-          class="accent tracking-wide text-lg"
-          @click="titleSelect"
-          v-for="(card, index) in cards"
-          :tag="index"
-        >
+        <li class="accent tracking-wide text-lg" @click="titleSelect" v-for="(card, index) in cards" :tag="index">
           {{ card.title }}
         </li>
       </ul>
@@ -55,7 +50,7 @@ export default {
       }, 1000);
     };
 
-    const titleSelect = (e) => {
+    const titleSelect = e => {
       index.value = e.target.attributes.tag.value;
     };
 
@@ -150,9 +145,9 @@ button:hover {
 }
 
 @media (min-width: 2000px) {
-  #main {
+  /* #main {
     transform: scale(1.1);
-  }
+  } */
 
   .title-nav {
     top: 7rem;
